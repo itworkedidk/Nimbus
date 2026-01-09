@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+  <Properties>
+    <Property name="PATTERN">
+      %d{HH:mm:ss.SSS} [nimbus] [%t] %-5level %c{1} - %msg%n
+    </Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="NimbusConsole" target="SYSTEM_OUT">
+      <PatternLayout pattern="${PATTERN}"/>
+    </Console>
+  </Appenders>
+
+  <Loggers>
+    <Root level="info">
+      <AppenderRef ref="NimbusConsole"/>
+    </Root>
+  </Loggers>
+
+</Configuration>
