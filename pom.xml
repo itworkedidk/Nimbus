@@ -8,6 +8,8 @@
 
   <modules>
     <module>driver-core</module>
+    <module>nimbus_exception</module>
+    <module>nimbus_platform</module>
   </modules>
 
   <dependencyManagement>
